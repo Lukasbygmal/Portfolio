@@ -103,7 +103,7 @@ header {
   font-size: 60px;
   font-weight: bold;
   background-color: transparent;
-  color: gold;
+  color: #1AD9E5;
   cursor: pointer;
   border: none;
   outline: none;
@@ -112,7 +112,7 @@ header {
 }
 
 .title-button:hover {
-  color: goldenrod;
+  color: #0FACAF;
 }
 
 .button-group {
@@ -133,7 +133,7 @@ header {
 }
 
 .button-group button:hover {
-  color: goldenrod;
+  color: #0FACAF;
 }
 
 .content {

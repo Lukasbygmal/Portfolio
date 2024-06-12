@@ -37,7 +37,7 @@ export default {
   .layout-portrait{
     width: 125px;
     height: 125px;
-    margin: 2px;
+    margin-top: 80px;
   }
 }
 </style>
