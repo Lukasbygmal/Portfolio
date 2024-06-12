@@ -1,35 +1,61 @@
 <template>
   <div id="app">
     <header>
-      <button class="title-button" @click="handleTitleClick">Lukas BM</button>
-      <div class="button-group">
-        <button @click="handleButtonClick('Projects')">Projects</button>
-        <button @click="handleButtonClick('Contact')">Contact</button>
-        <a href="/LukasBygdellMalmstig-CV.pdf" target="_blank">
+      <button class="title-button" @click="handleButtonClick('mainLayout')">Lukas BM</button>
+      <div class="menu-toggle" @click="toggleMenu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="button-group" :class="{ 'show-menu': isMenuOpen }">
+        <button @click="handleButtonClick('projectLayout')">Projects</button>
+        <button @click="handleButtonClick('contactLayout')">Contact</button>
+        <a href="/LukasBygdellMalmstig-CV.pdf" target="_blank" @click="closeMenu">
           <button>CV</button>
         </a>
       </div>
     </header>
-    <MainLayout />
+    <div class="content">
+      <MainLayout id="mainLayout" />
+      <ProjectLayout id="projectLayout" />
+      <ContactLayout id="contactLayout" />
+    </div>
   </div>
 </template>
 
 <script>
 import MainLayout from './components/MainLayout.vue'
+import ProjectLayout from './components/ProjectLayout.vue'
+import ContactLayout from './components/ContactLayout.vue'
 
 export default {
   name: 'App',
   components: {
-    MainLayout
+    MainLayout,
+    ProjectLayout,
+    ContactLayout
   },
+  data() {
+  return {
+    isMenuOpen: false
+  };
+},
   methods: {
-    handleButtonClick(page) {
-      console.log(`${page} button clicked`);
-      // Add your navigation logic here
+    handleButtonClick(id) {
+      this.scrollTo(id);
+      this.closeMenu();
     },
-    handleTitleClick() {
-      console.log('Title button clicked');
-      // Add your navigation logic here
+    scrollTo(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    },
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    },
+    closeMenu() {
+      this.isMenuOpen = false;
     }
   }
 }
@@ -55,15 +81,22 @@ html, body {
 
   min-height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  background-color: #333;
+  position: fixed; /* Set header to fixed position */
+  top: 0; /* Align header to the top of the viewport */
+  left: 0; /* Align header to the left of the viewport */
+  right: 0; /* Align header to the right of the viewport */
+  background-color: rgba(51, 51, 51, 0.8);
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000; /* Ensure header stays above other content */
 }
 
 .title-button {
@@ -91,7 +124,7 @@ header {
 
 .button-group button {
   border: none;
-  background-color: #333;
+  background-color: transparent;
   color: white;
   cursor: pointer;
   font-size: 34px;
@@ -103,13 +136,62 @@ header {
   color: goldenrod;
 }
 
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+  overflow-y: auto;
+}
+
+.MainLayout,
+.ProjectLayout,
+.ContactLayout {
+  flex: 1;
+  min-height: 100vh;
+  min-width: 0;
+}
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-toggle .line {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .button-group {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(51, 51, 51, 0.8);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .button-group.show-menu {
+    display: flex;
+  }
+
   .title-button {
     font-size: 36px;
   }
 
   .button-group button {
-    font-size: 24px;
+    width: 100%;
+    padding: 10px 20px;
   }
 }
 </style>
