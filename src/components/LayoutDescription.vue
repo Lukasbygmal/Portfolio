@@ -1,7 +1,7 @@
 <template>
     <div class="layout-description">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit massa eget tincidunt rhoncus. Cras sed est eu arcu cursus ornare. Ut eget dignissim purus. Curabitur facilisis aliquet pulvinar. Quisque efficitur vestibulum elit vitae interdum. Donec aliquam mollis tincidunt. Praesent libero mauris, semper ac semper egestas, viverra et sapien. Nam luctus aliquam eros vitae malesuada. Donec id nisl elementum, vulputate mi in, venenatis turpis. Fusce eget sapien a magna maximus laoreet vitae cursus arcu. Phasellus egestas porta nulla, rutrum consectetur purus pharetra quis.
+       Hello and welcome to my site! Currently I'm studying my 4th year of IT Engineering at Uppsala University. 
       </p>
     </div>
   </template>

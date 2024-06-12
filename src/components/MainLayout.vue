@@ -11,7 +11,6 @@
       <layout-button buttonText="Me" link="https://example.com/button1"></layout-button>
       <layout-button buttonText="Projects" link="https://example.com/button2"></layout-button>
       <layout-button buttonText="CV" link="/LukasBygdellMalmstig-CV.pdf"></layout-button>
-      <layout-button buttonText="Contact" link="https://example.com/button3"></layout-button>
     </div>
   </div>
 </template>
