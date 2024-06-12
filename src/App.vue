@@ -72,12 +72,13 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #ffffff;
+  color: black;
   margin-top: 0;
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: transparent;
 
   min-height: 100vh;
   width: 100%;
