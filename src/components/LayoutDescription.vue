@@ -19,6 +19,7 @@
   <style scoped>
   .layout-description-title {
     font-size: 48px;
+    font-weight: bold;
     color: black;
     margin: 22px;
     background-color: transparent;

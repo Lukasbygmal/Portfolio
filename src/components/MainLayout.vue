@@ -28,6 +28,7 @@ export default {
   text-align: center;
   justify-content: center;
   min-height: 100vh;
+  background-color: #F3DFA2;
 }
 
 .content-container {

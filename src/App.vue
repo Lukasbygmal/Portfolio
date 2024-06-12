@@ -90,7 +90,7 @@ header {
   top: 0; /* Align header to the top of the viewport */
   left: 0; /* Align header to the left of the viewport */
   right: 0; /* Align header to the right of the viewport */
-  background-color: rgba(51, 51, 51, 0.8);
+  background-color: #231F20;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -103,7 +103,7 @@ header {
   font-size: 60px;
   font-weight: bold;
   background-color: transparent;
-  color: #1AD9E5;
+  color: white;
   cursor: pointer;
   border: none;
   outline: none;
@@ -112,7 +112,7 @@ header {
 }
 
 .title-button:hover {
-  color: #0FACAF;
+  color: #808080;
 }
 
 .button-group {
@@ -133,7 +133,7 @@ header {
 }
 
 .button-group button:hover {
-  color: #0FACAF;
+  color: #808080;
 }
 
 .content {

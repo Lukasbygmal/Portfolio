@@ -28,6 +28,7 @@
     text-align: center;
     justify-content: center;
     min-height: 100vh;
+    background-color: #BB4430;
   }
   
   .content-container {
