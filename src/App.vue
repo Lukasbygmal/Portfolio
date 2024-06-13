@@ -87,17 +87,17 @@ html, body {
 }
 
 header {
-  position: fixed; /* Set header to fixed position */
-  top: 0; /* Align header to the top of the viewport */
-  left: 0; /* Align header to the left of the viewport */
-  right: 0; /* Align header to the right of the viewport */
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
   background-color: #231F20;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000; /* Ensure header stays above other content */
+  z-index: 1000; 
 }
 
 .title-button {
