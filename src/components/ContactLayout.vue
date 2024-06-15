@@ -5,7 +5,7 @@
           <h1>Kontakta mig</h1>
         </div>
         <div class="contact-email">
-          Email: Lukasbygmal@gmail.com eller formuläret nedan 
+          Email: Lukasbygmal@gmail.com <br> eller   formuläret nedan 
         </div>
         <ContactForm/> 
       </div>
@@ -55,8 +55,9 @@
 
   .contact-email {
     color:#FFFFFF;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 20px;
+    line-height: 1.5em;
   }
  
   @media (max-width: 768px) {

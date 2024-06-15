@@ -68,6 +68,9 @@ export default {
   width: 100%;
   max-width: 500px;
   margin: 10px auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .form-group {
@@ -86,6 +89,7 @@ export default {
   font-size: 1.2em;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .form-group textarea {
@@ -125,8 +129,12 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-  .form-container{
-    margin: 10px 10px;
+  .form-container {
+    padding: 0 10px;
+  }
+  .form-group input,
+  .form-group textarea {
+    font-size: 1em; 
   }
   
 }
