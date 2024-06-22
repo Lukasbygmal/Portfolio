@@ -36,26 +36,27 @@ export default {
   methods: {
     async submitForm() {
       try {
-        const response = await fetch('http://localhost:3000/send-email', {
+        const response = await fetch('https://formspree.io/f/xnqeebwp', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify(this.form)
         });
-        const data = await response.json();
+
         if (response.ok) {
-          this.successMessage = data.message;
+          this.successMessage = 'Tack för ditt meddelande!';
           this.errorMessage = '';
           this.form.name = '';
           this.form.email = '';
           this.form.message = '';
         } else {
-          this.errorMessage = data.error;
+          this.errorMessage = 'Något gick fel. Försök igen senare.';
           this.successMessage = '';
         }
       } catch (error) {
-        this.errorMessage = 'An error occurred while sending the email.';
+        console.error('Error submitting form:', error);
+        this.errorMessage = 'Något gick fel. Försök igen senare.';
         this.successMessage = '';
       }
     }
@@ -145,5 +146,14 @@ button:hover {
     font-size: 1em; 
   }
   
+}
+.success-message {
+color: black; 
+  font-weight: bold;
+}
+
+.error-message {
+  color: black; 
+  font-weight: bold;
 }
 </style>
