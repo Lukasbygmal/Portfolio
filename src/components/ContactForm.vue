@@ -3,7 +3,7 @@
     <form @submit.prevent="submitForm">
       <div class="form-group">
         <label for="name"></label>
-        <input type="text" id="name" v-model="form.name" placeholder="Name" required />
+        <input type="text" id="name" v-model="form.name" placeholder="Namn" required />
       </div>
       <div class="form-group">
         <label for="email"></label>
@@ -11,9 +11,9 @@
       </div>
       <div class="form-group">
         <label for="message"></label>
-        <textarea id="message" v-model="form.message" placeholder="Message" required></textarea>
+        <textarea id="message" v-model="form.message" placeholder="Meddelande" required></textarea>
       </div>
-      <button type="submit">Send</button>
+      <button type="submit">Skicka</button>
     </form>
     <div v-if="successMessage" class="success-message">{{ successMessage }}</div>
     <div v-if="errorMessage" class="error-message">{{ errorMessage }}</div>
@@ -90,6 +90,14 @@ export default {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #231F20; 
+  border-width: 2px;
+  box-shadow: 0 0 10px rgba(49, 49, 50, 0.5);
 }
 
 .form-group textarea {

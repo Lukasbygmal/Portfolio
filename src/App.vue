@@ -8,8 +8,8 @@
         <div class="line"></div>
       </div>
       <div class="button-group" :class="{ 'show-menu': isMenuOpen }">
-        <button @click="handleButtonClick('projectLayout')">Projects</button>
-        <button @click="handleButtonClick('contactLayout')">Contact</button>
+        <button @click="handleButtonClick('projectLayout')">Projekt</button>
+        <button @click="handleButtonClick('contactLayout')">Kontakt</button>
         <a href="/LukasBygdellMalmstig-CV.pdf" target="_blank" @click="closeMenu">
           <button>CV</button>
         </a>
