@@ -4,12 +4,12 @@
       <button class="title-button" @click="handleButtonClick('mainLayout')">Lukas BM</button>
       <div class="menu-toggle" @click="toggleMenu">
         <div class="line"></div>
-        <div class="line"></div>
+        <div class="line"></div>  
         <div class="line"></div>
       </div>
       <div class="button-group" :class="{ 'show-menu': isMenuOpen }">
-        <button @click="handleButtonClick('projectLayout')">Projekt</button>
-        <button @click="handleButtonClick('contactLayout')">Kontakt</button>
+        <button @click="handleButtonClick('projectLayout')">Projects</button>
+        <button @click="handleButtonClick('contactLayout')">Contact</button>
         <a href="/LukasBygdellMalmstig-CV.pdf" target="_blank" @click="closeMenu">
           <button>CV</button>
         </a>

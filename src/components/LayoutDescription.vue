@@ -1,12 +1,16 @@
 <template>
     <div class="layout-description-title">
       
-      Student UU<br> Civilingenjör Informationsteknologi
+      4th Year Student at UU<br> Master's Programme in Computer<br> and Infromation Engineering
     </div>
     <div class= "layout-description">
-      Välkommen till min portfoliosida! Under utbildningen har jag både arbetat med många olika programmeringsspråk/teknologier som ni kan se nedan och lärt mig att kommunicera effektivt och samarbeta för att nå gemensamma mål från de projektarbeten jag haft.
-      På min fritid spelar jag mycket brädspel, sitter med i KFUM Norrbyskärs styrelse och håller på med egna projekt, som ni kan se längre ner på sidan.
-      Jag ser fram emot nya utmaningar där jag kan bidra med mina kunskaper och initativ för att utveckla lösningar som bidrar positivt till samhällsutvecklingen.
+      Welcome to my portfolio site! I'm currently looking for a part-time or summer job. During my education I have worked with a wide variety of languages/technologies and 
+      developed strong communication skills and the ability to collaborate effectively to achieve shared goals. In my free time I enjoy working on coding projects, which you can explore in the projects section.
+      I look forward to new challenges where I can contribute with my knowledge and initiative to develop solutions to real problems! <br>
+      The languages/technologies I feel most comfortable with are:
+    </div>
+    <div class="technologies">
+      Python C++ Java C Haskell SQL JavaScript Flutter Vue.js React 
     </div>
   </template>
   
@@ -30,6 +34,13 @@
     margin: 5px 80px;
     background-color: transparent
   }
+  .technologies {
+    margin-top: auto;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: transparent;
+    color: #BB4430;
+  }
   
   @media (max-width: 768px) {
   .layout-description-title{
@@ -43,7 +54,7 @@
   }
   .technologies {
     margin-top: auto;
-    font-size: 0.9em;
+    font-size: 1.2em;
     font-weight: bold;
     background-color: transparent;
     color: #BB4430;

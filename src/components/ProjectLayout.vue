@@ -30,23 +30,23 @@ export default {
       projects: [
         {
           id: 1,
-          title: 'Kandidatarbete: Domänspecifik chatbot för Drupps',
+          title: 'Bachelor´s Thesis: Domain Specific Chatbot for Drupps',
           image: drupps,
-          description: 'Vi utvecklade den domänspecifika chatbotten "Dr. Upps" i ett web-baserat UI, åt Drupps för att anställda ska kunna ställa frågor om intern dokumentation. Systemet består av en frontend skriven i React och Next.js, backend som är skriven i PostgreSQL och Flask och en AI del som består av en RAG och Google\'s vertex AI som LLM.',
+          description: 'We developed the domain-specific chatbot Dr. Upps in a web-based UI for Drupps, enabling employees to ask questions about internal documentation. The system consists of a frontend built with React and Next.js, a backend implemented with PostgreSQL and Flask, and an AI component comprising a RAG and Google´s Vertex AI as the LLM.',
           technologies: ['React', 'Next.js', 'PostgreSQL', 'Flask', 'Vertex AI', 'Auth0']
         },
         {
           id: 2,
-          title: 'Portfoliosida',
+          title: 'Portfolio Site',
           image: portfolio_sc,
-          description: 'Skapade den här dynamiska och responsiva portfoliosida med Vue.js, JavaScript och CSS. Den har en simplistisk design med ett kontaktformulär.',
+          description: 'Created a dynamic and responsive portfolio site using Vue.js, JAvascript and CSS. It has a simplistic design showcasing my projects and working contact form.',
           technologies: ['Vue.js', 'JavaScript', 'CSS']
         },
         {
           id: 3,
-          title: 'Schack-ish spel med AI',
+          title: 'Savanna Stratgey: Chess-ish game with AI',
           image: savanna,
-          description: 'Målet med projektet var att utforska minimaxalgoritmen alpha-beta pruning och sortering av drag för optimering. För att göra det mer intressant valde jag att göra ett schack med alternativa pjäser för att ge mer utrymme för utforskning i den heuristiska värderingen.',
+          description: 'The game features unique piece movements distinct from chess, although with similar strategic elements. The goal of the project was to explore the implementation of the minimax algorithm with alpha-beta pruning, optimizing it through move ordering and heuristic evaluation techniques.',
           technologies: ['Python']
         },
       ]

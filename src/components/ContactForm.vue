@@ -3,7 +3,7 @@
     <form @submit.prevent="submitForm">
       <div class="form-group">
         <label for="name"></label>
-        <input type="text" id="name" v-model="form.name" placeholder="Namn" required />
+        <input type="text" id="name" v-model="form.name" placeholder="Name" required />
       </div>
       <div class="form-group">
         <label for="email"></label>
@@ -11,9 +11,9 @@
       </div>
       <div class="form-group">
         <label for="message"></label>
-        <textarea id="message" v-model="form.message" placeholder="Meddelande" required></textarea>
+        <textarea id="message" v-model="form.message" placeholder="Message" required></textarea>
       </div>
-      <button type="submit">Skicka</button>
+      <button type="submit">Send</button>
     </form>
     <div v-if="successMessage" class="success-message">{{ successMessage }}</div>
     <div v-if="errorMessage" class="error-message">{{ errorMessage }}</div>
@@ -45,7 +45,7 @@ export default {
         });
 
         if (response.ok) {
-          this.successMessage = 'Tack för ditt meddelande!';
+          this.successMessage = 'Thank you for your message!';
           this.errorMessage = '';
           this.form.name = '';
           this.form.email = '';

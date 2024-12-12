@@ -2,10 +2,10 @@
     <div class="main-container">
       <div class="content-container">
         <div class="contact-title">
-          <h1>Kontakta mig</h1>
+          <h1>Contact Me</h1>
         </div>
         <div class="contact-email">
-          Email: Lukasbygmal@gmail.com <br> eller formuläret nedan
+          Email: Lukasbygmal@gmail.com <br> or using this form:
         </div>
         <ContactForm/> 
       </div>
