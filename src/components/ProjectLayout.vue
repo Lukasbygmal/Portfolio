@@ -44,7 +44,7 @@ export default {
         },
         {
           id: 3,
-          title: 'Schack-ish spel med ai',
+          title: 'Schack-ish spel med AI',
           image: savanna,
           description: 'Målet med projektet var att utforska minimaxalgoritmen alpha-beta pruning och sortering av drag för optimering. För att göra det mer intressant valde jag att göra ett schack med alternativa pjäser för att ge mer utrymme för utforskning i den heuristiska värderingen.',
           technologies: ['Python']
