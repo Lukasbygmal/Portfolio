@@ -19,6 +19,7 @@ import ProjectCard from './ProjectCard.vue';
 import savanna from '@/assets/savanna.png';
 import portfolio_sc from '@/assets/portfolio_sc.png';
 import drupps from '@/assets/drupps.png';
+import teamTumble from '@/assets/TeamTumble.png';
 
 export default {
   name: 'ProjectLayout',
@@ -44,10 +45,17 @@ export default {
         },
         {
           id: 3,
-          title: 'Savanna Stratgey: Chess-ish game with AI',
+          title: 'Savanna Stratgey: Chess-ish Game with AI',
           image: savanna,
           description: 'The game features unique piece movements distinct from chess, although with similar strategic elements. The goal of the project was to explore the implementation of the minimax algorithm with alpha-beta pruning, optimizing it through move ordering and heuristic evaluation techniques.',
           technologies: ['Python']
+        },
+        {
+          id: 4,
+          title: 'TeamTumbler: Interactive Team Maker (In Progress)',
+          image: teamTumble,
+          description: 'A website for dividing things into groups using a galton board.',
+          technologies: ['Vue.js, TypeScript, Matter.js']
         },
       ]
     };
