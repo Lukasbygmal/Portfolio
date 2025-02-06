@@ -1,24 +1,18 @@
-# portfolio
+Portfolio Website README
 
-## Project setup
-```
-npm install
-```
+Overview
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This is a personal portfolio website designed to showcase my projects, skills, and experience. The website includes sections such as About Me, Projects, Skills, Contact, and more.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Features
 
-### Lints and fixes files
-```
-npm run lint
-```
+Responsive Design: Works seamlessly on desktop, tablet, and mobile devices.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Project Showcase: Highlights key projects with descriptions and links.
+
+Contact Form: Enables visitors to reach out via email.
+
+
+Technologies Used
+
+Frontend: HTML, CSS, TypeScript, Vue

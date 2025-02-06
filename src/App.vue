@@ -10,7 +10,7 @@
       <div class="button-group" :class="{ 'show-menu': isMenuOpen }">
         <button @click="handleButtonClick('projectLayout')">Projects</button>
         <button @click="handleButtonClick('contactLayout')">Contact</button>
-        <a href="/LukasBygdellMalmstig-CV.pdf" target="_blank" @click="closeMenu">
+        <a href="/LukasBygdellMalmstig-CV-En.pdf" target="_blank" @click="closeMenu">
           <button>CV</button>
         </a>
       </div>

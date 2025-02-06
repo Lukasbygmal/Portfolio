@@ -52,9 +52,9 @@ export default {
         },
         {
           id: 4,
-          title: 'TeamTumbler: Interactive Team Maker (In Progress)',
+          title: 'TeamTumbler: Team Randomizer',
           image: teamTumble,
-          description: 'A website for dividing things into groups using a galton board.',
+          description: 'TeamTumble is an interactive web application I developed that uses a Galton board physics simulation to randomly generate teams. The site provides a fun and functional way to sort groups, using matter.js. It is avialable at Teamtumble.net.',
           technologies: ['Vue.js, TypeScript, Matter.js']
         },
       ]
