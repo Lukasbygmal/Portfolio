@@ -10,7 +10,7 @@
       The languages/technologies I feel most comfortable with are:
     </div>
     <div class="technologies">
-      Python C++ Java C Haskell SQL JavaScript/TypeScript Flutter Vue.js React 
+      Python C/C++ Java Haskell SQL JavaScript/TypeScript Flutter Vue.js React 
     </div>
   </template>
   

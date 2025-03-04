@@ -20,6 +20,7 @@ import savanna from '@/assets/savanna.png';
 import portfolio_sc from '@/assets/portfolio_sc.png';
 import drupps from '@/assets/drupps.png';
 import teamTumble from '@/assets/TeamTumble.png';
+import ariadne from '@/assets/Ariadne.png';
 
 export default {
   name: 'ProjectLayout',
@@ -56,6 +57,13 @@ export default {
           image: teamTumble,
           description: 'TeamTumble is an interactive web application I developed that uses a Galton board physics simulation to randomly generate teams. The site provides a fun and functional way to sort groups, using matter.js. It is avialable at Teamtumble.net.',
           technologies: ['Vue.js, TypeScript, Matter.js']
+        },
+        {
+          id: 5,
+          title: 'Ariadne (early in development)',
+          image: ariadne,
+          description: 'A speedtyping dungeon traversal rpg. It is built from the ground up using SFML for graphics.',
+          technologies: ['C++, SFML, (soon SQL), Make']
         },
       ]
     };
