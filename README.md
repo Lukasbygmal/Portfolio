@@ -16,3 +16,6 @@ Contact Form: Enables visitors to reach out via email.
 Technologies Used
 
 Frontend: HTML, CSS, TypeScript, Vue
+
+#How to run
+npm run serve

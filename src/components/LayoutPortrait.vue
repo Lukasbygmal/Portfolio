@@ -3,7 +3,7 @@
     <img :src="imageSrc" alt="Portrait Image" class="image">
   </div>
 </template>
-  
+
 <script>
 export default {
   name: 'LayoutPortrait',
@@ -14,7 +14,7 @@ export default {
   }
 }
 </script>
-  
+
 <style scoped>
 .layout-portrait {
   width: 225px;
@@ -34,7 +34,7 @@ export default {
 }
 
 @media (max-width: 768px) {
-  .layout-portrait{
+  .layout-portrait {
     width: 125px;
     height: 125px;
     margin-top: 80px;

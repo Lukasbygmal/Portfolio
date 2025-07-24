@@ -96,7 +96,7 @@ export default {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #231F20; 
+  border-color: #231F20;
   border-width: 2px;
   box-shadow: 0 0 10px rgba(49, 49, 50, 0.5);
 }
@@ -141,19 +141,21 @@ button:hover {
   .form-container {
     padding: 0 10px;
   }
+
   .form-group input,
   .form-group textarea {
-    font-size: 1em; 
+    font-size: 1em;
   }
-  
+
 }
+
 .success-message {
-color: black; 
+  color: black;
   font-weight: bold;
 }
 
 .error-message {
-  color: black; 
+  color: black;
   font-weight: bold;
 }
 </style>
