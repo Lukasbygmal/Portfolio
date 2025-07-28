@@ -3,7 +3,9 @@
     <div class="content-container">
       <LayoutPortrait></LayoutPortrait>
       <LayoutDescription></LayoutDescription>
+      
     </div>
+    <div><LayoutExperience> </LayoutExperience></div>
     <div class="social-buttons-container">
       <SocialButton url="https://github.com/lukasbygmal" image="/github.png" />
       <SocialButton url="https://www.linkedin.com/in/lukas-bygdell-malmstig-14212a2a2/" image="/linkedinB.png" />
@@ -15,12 +17,14 @@
 import LayoutPortrait from './LayoutPortrait.vue';
 import LayoutDescription from './LayoutDescription.vue';
 import SocialButton from './SocialButton.vue';
+import LayoutExperience from './LayoutExperience.vue';
 
 export default {
   name: 'MainLayout',
   components: {
     LayoutPortrait,
     LayoutDescription,
+    LayoutExperience,
     SocialButton,
   },
 };
@@ -41,7 +45,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 40px;
   flex-wrap: wrap;
 }
 

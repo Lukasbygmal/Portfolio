@@ -5,10 +5,9 @@
   </div>
   <div class="layout-description">
     Welcome to my portfolio site! In my free time I enjoy working on coding projects, which you can explore in the
-    projects section. <br>
+    projects section.
     I'm especially interested in computer architecture, network and security.
-    <br>
-    The languages/technologies I feel most comfortable with are:
+    <br>The languages/technologies I feel most comfortable with are:
   </div>
   <div class="technologies">
     C/C++ Python C# Java SQL JavaScript/TypeScript Flutter Vue.js Flask React
@@ -33,8 +32,9 @@ export default {
 .layout-description {
   font-size: 24px;
   color: black;
-  margin: 5px 80px;
-  background-color: transparent
+  margin: 5px auto;
+  background-color: transparent;
+  max-width: 70%;
 }
 
 .technologies {

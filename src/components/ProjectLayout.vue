@@ -37,7 +37,7 @@ export default {
           title: 'Wake of Ariadne',
           image: ariadne,
           description: 'A retro-inspired dungeon crawler rpg, with speedtyping as combat. The game is built in C++, with a database in PostgreSQL and a Flask REST API. Additionally, it uses OAuth with github. Published at itch.io!',
-          technologies: ['C++', 'SFML', 'Flask', 'Python', 'SQL', 'Make'],
+          technologies: ['C++', 'Flask', 'Python', 'PostgreSQL', 'Make', 'OpenSSL', 'SFML', 'OAuth'],
           link: "https://lukasbygmal.itch.io/wake-of-ariadne"
         },
         {
@@ -64,7 +64,7 @@ export default {
           technologies: ['Vue.js', 'JavaScript', 'CSS'],
           link: "https://github.com/Lukasbygmal/Portfolio"
         },
-        
+
       ]
     };
   }

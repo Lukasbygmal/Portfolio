@@ -37,11 +37,11 @@ export default {
       return this.technologies.join(', ');
     }
   },
-  methods: { // CHANGED: Added methods section
-    openLink() { // CHANGED: Added openLink method
-      window.open(this.link, '_blank'); // CHANGED: Opens link in new tab
-    } // CHANGED: End of openLink method
-  } // CHANGED: End of methods section
+  methods: {
+    openLink() {
+      window.open(this.link, '_blank');
+    }
+  }
 }
 </script>
 
@@ -59,20 +59,13 @@ export default {
   flex-direction: column;
   justify-content: start;
   cursor: pointer;
-  /* CHANGED: Added cursor pointer for better UX */
 }
 
 .card:hover {
-  /* CHANGED: Added hover effect */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  /* CHANGED: Enhanced shadow on hover */
   transform: translateY(-2px);
-  /* CHANGED: Subtle lift effect */
   transition: all 0.3s ease;
-  /* CHANGED: Smooth transition */
 }
-
-/* CHANGED: End of hover effect */
 
 
 .card-image {
@@ -80,9 +73,7 @@ export default {
   height: 200px;
   border-radius: 8px;
   object-fit: contain;
-  /* Shows full image, may have letterboxing */
   background: #f0f0f0;
-  /* Background color for empty areas */
 }
 
 .card-title {
@@ -91,7 +82,7 @@ export default {
 }
 
 .card-description {
-  font-size: 1em;
+  font-size: 1.1em;
   color: #666;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -102,7 +93,7 @@ export default {
 
 .technologies-used {
   margin-top: auto;
-  font-size: 0.9em;
+  font-size: 1.2em;
   font-weight: bold;
   background-color: transparent;
   color: #BB4430;
@@ -118,6 +109,7 @@ export default {
 
   .card-description {
     -webkit-line-clamp: 20;
+    font-size: 1em;
   }
 }
 </style>
