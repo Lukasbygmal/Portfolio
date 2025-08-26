@@ -4,9 +4,8 @@
     5th Year Student at UU<br> Master's Programme in Computer<br> and Infromation Engineering
   </div>
   <div class="layout-description">
-    Welcome to my portfolio site! In my free time I enjoy working on coding projects, which you can explore in the
-    projects section.
-    I'm especially interested in computer architecture, network and security.
+    Welcome to my portfolio site!<br>In my free time I enjoy working on coding projects, which you can explore in the
+    projects section. <br> I'm especially interested in computer architecture, network and security.
     <br>The languages/technologies I feel most comfortable with are:
   </div>
   <div class="technologies">

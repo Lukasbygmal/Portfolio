@@ -15,6 +15,7 @@ import portfolio_sc from '@/assets/portfolio_sc.png';
 import drupps from '@/assets/drupps.png';
 import teamTumble from '@/assets/teamTumble.png';
 import ariadne from '@/assets/ariadne.png';
+import neatArcade from '@/assets/neat_arcade.png';
 
 export default {
   name: 'ProjectLayout',
@@ -30,7 +31,7 @@ export default {
           image: drupps,
           description: 'We developed the domain-specific chatbot Dr. Upps in a web-based UI for Drupps, enabling employees to ask questions about internal documentation. The system consists of a frontend built with React and Next.js, a backend implemented with PostgreSQL and Flask, and an AI component comprising a RAG and Google´s Vertex AI as the LLM.',
           technologies: ['React', 'Next.js', 'PostgreSQL', 'Flask', 'Vertex AI', 'Auth0'],
-          link: "https://github.com/lukasbygmal"
+          link: "/KandidatArbete.pdf"
         },
         {
           id: 2,
@@ -50,6 +51,14 @@ export default {
         },
         {
           id: 4,
+          title: 'NEAT Arcade: (work in progress)',
+          image: neatArcade,
+          description: 'Collection of arcade games allowing for simulation of NeuroEvolution of Augmenting Topologies, evolution based AI. ',
+          technologies: ['Python'],
+          link: "https://github.com/Lukasbygmal/NEAT-arcade"
+        },
+        {
+          id: 5,
           title: 'Savanna Stratgey: Chess-ish Game with AI',
           image: savanna,
           description: 'The game features unique piece movements distinct from chess, although with similar strategic elements. The goal of the project was to explore the implementation of the minimax algorithm with alpha-beta pruning, optimizing it through move ordering and heuristic evaluation techniques.',
@@ -57,7 +66,7 @@ export default {
           link: "https://github.com/Lukasbygmal/Savanna_Strategy"
         },
         {
-          id: 5,
+          id: 6,
           title: 'Portfolio Site',
           image: portfolio_sc,
           description: 'Created a dynamic and responsive portfolio site using Vue.js, Javascript and CSS. It has a simplistic design showcasing my projects and a working contact form.',

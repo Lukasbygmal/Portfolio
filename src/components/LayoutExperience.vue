@@ -6,8 +6,8 @@
         SAAB Underwater Systems - Summer Internship as Developer - 2025
     </div>
     <div class="experience-description">
-        Confidental, lol because i don't know what im allowed to say <br>
-        lang, tech, wth, more
+        Agent-based simulation in a maritime environment using LLM agents <br>
+        Worked with C#, Python, Unity, Google ADK, MCP
     </div>
     
 </template>
