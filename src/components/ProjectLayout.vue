@@ -54,7 +54,7 @@ export default {
           title: 'NEAT Arcade: (work in progress)',
           image: neatArcade,
           description: 'Collection of arcade games allowing for simulation of NeuroEvolution of Augmenting Topologies, evolution based AI. ',
-          technologies: ['Python'],
+          technologies: ['Python', 'NEAT'],
           link: "https://github.com/Lukasbygmal/NEAT-arcade"
         },
         {
