@@ -13,7 +13,7 @@ import ProjectCard from './ProjectCard.vue';
 import savanna from '@/assets/savanna.png';
 import portfolio_sc from '@/assets/portfolio_sc.png';
 import drupps from '@/assets/drupps.png';
-import teamTumble from '@/assets/teamTumble.png';
+import team_tumble from '@/assets/team_tumble.png';
 import ariadne from '@/assets/ariadne.png';
 import neatArcade from '@/assets/neat_arcade.png';
 
@@ -44,7 +44,7 @@ export default {
         {
           id: 3,
           title: 'TeamTumbler: Team Randomizer',
-          image: teamTumble,
+          image: team_tumble,
           description: 'TeamTumble is an interactive web application I developed that uses a Galton board physics simulation to randomly generate teams. The site provides a fun and functional way to sort groups, using matter.js. It is live!',
           technologies: ['Vue.js', 'TypeScript', 'Matter.js'],
           link: "https://teamtumble.net/"
