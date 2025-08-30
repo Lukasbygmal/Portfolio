@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <AirplaneHandler />
     <header>
       <button class="title-button" @click="handleButtonClick('mainLayout')">Lukas BM</button>
       <div class="menu-toggle" @click="toggleMenu">
@@ -27,13 +28,15 @@
 import MainLayout from './components/MainLayout.vue'
 import ProjectLayout from './components/ProjectLayout.vue'
 import ContactLayout from './components/ContactLayout.vue'
+import AirplaneHandler from './components/AirplaneHandler.vue'
 
 export default {
   name: 'App',
   components: {
     MainLayout,
     ProjectLayout,
-    ContactLayout
+    ContactLayout,
+    AirplaneHandler
   },
   data() {
   return {

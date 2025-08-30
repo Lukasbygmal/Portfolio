@@ -9,7 +9,6 @@
 
 <script>
 import ProjectCard from './ProjectCard.vue';
-//import mountain from '@/assets/mountain.jpeg';
 import savanna from '@/assets/savanna.png';
 import portfolio_sc from '@/assets/portfolio_sc.png';
 import drupps from '@/assets/drupps.png';
