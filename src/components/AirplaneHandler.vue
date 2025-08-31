@@ -1,6 +1,8 @@
 <template>
     <div ref="plane" class="airplane" :style="{
         transform: `translate(${x}px, ${y}px) rotate(${rotation}deg)`,
+        left: '-45px',
+        top: '-45px'
     }">
         <img src="@/assets/plane.png" alt="airplane" />
     </div>
@@ -40,21 +42,23 @@ export default {
             this.targetY = e.clientY;
         },
         animate() {
-            const lerp = 0.1;
+            const lerp = 0.12;
 
-            
             this.x += (this.targetX - this.x) * lerp;
             this.y += (this.targetY - this.y) * lerp;
 
             const dx = this.targetX - this.x;
             const dy = this.targetY - this.y;
-            const targetRotation = Math.atan2(dy, dx) * (180 / Math.PI);
+            const targetRotation = Math.atan2(dy, dx) * (180 / Math.PI) + 90;
 
             let rotationDiff = targetRotation - this.rotation;
             if (rotationDiff > 180) rotationDiff -= 360;
             if (rotationDiff < -180) rotationDiff += 360;
 
             this.rotation += rotationDiff * lerp;
+
+            while (this.rotation > 180) this.rotation -= 360;
+            while (this.rotation < -180) this.rotation += 360;
 
             this.animationId = requestAnimationFrame(this.animate);
         }
@@ -67,12 +71,12 @@ export default {
     position: fixed;
     pointer-events: none;
     z-index: 999;
-    transform-origin: center;
+    transform-origin: center center;
 }
 
 .airplane img {
-    width: 40px;
-    height: 40px;
+    width: 90px;
+    height: auto;
     display: block;
 }
 </style>
