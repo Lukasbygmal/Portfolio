@@ -52,7 +52,7 @@ export default {
           id: 4,
           title: 'NEAT Arcade: (work in progress)',
           image: neatArcade,
-          description: 'Collection of arcade games allowing for simulation of NeuroEvolution of Augmenting Topologies, evolution based AI. ',
+          description: 'Collection of 2d arcade games, like racing and landing a pod, allowing for simulation of NeuroEvolution of Augmenting Topologies, evolution based AI. ',
           technologies: ['Python', 'NEAT'],
           link: "https://github.com/Lukasbygmal/NEAT-arcade"
         },
@@ -68,7 +68,7 @@ export default {
           id: 6,
           title: 'Portfolio Site',
           image: portfolio_sc,
-          description: 'Created a dynamic and responsive portfolio site using Vue.js, Javascript and CSS. It has a simplistic design showcasing my projects and a working contact form.',
+          description: 'Created a dynamic and responsive portfolio site using Vue.js, Javascript and CSS. It has a simplistic design showcasing my projects, a working contact form and a fun little plane.',
           technologies: ['Vue.js', 'JavaScript', 'CSS'],
           link: "https://github.com/Lukasbygmal/Portfolio"
         },

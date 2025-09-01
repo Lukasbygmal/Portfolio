@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <AirplaneHandler />
+    <div class="airplane-handler">
+      <AirplaneHandler />
+    </div>
     <header>
       <button class="title-button" @click="handleButtonClick('mainLayout')">Lukas BM</button>
       <div class="menu-toggle" @click="toggleMenu">
@@ -196,6 +198,9 @@ header {
   .button-group button {
     width: 100%;
     padding: 10px 20px;
+  }
+  .airplane-handler {
+    display: none !important;
   }
 }
 </style>
